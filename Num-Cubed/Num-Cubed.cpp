@@ -4,7 +4,15 @@
 #include <iostream>
 using namespace std;
 
+int cubeNum(int num) {
+	return num * num * num;
+}
+
 int main()
 {
-	cout << "Hello World!\n";
+	int num;
+
+	cout << "Please enter a whole number value:\n";
+	cin >> num;
+	cout << "Your number cubed is: " << cubeNum(num) << ".\n";
 }
